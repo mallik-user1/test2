@@ -90,6 +90,7 @@ resource "aws_ssm_parameter" "km_ssm_db_user" {
   tags = merge(var.default_tags, {})
 }
 
+# check scan
 resource "aws_ssm_parameter" "km_ssm_db_name" {
   name        = "/km-${var.environment}/DB_NAME"
   description = "Kai Monkey Database Name"
